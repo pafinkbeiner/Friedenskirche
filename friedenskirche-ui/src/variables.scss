@@ -1,0 +1,13 @@
+/* COLORS */
+$primary-color: red;
+$secondary-color: blue;
+
+/* TEXT */
+$text-size: 12.5px;
+$text-color: rgb(74,74,74);
+$text-style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+*{
+    font-family: $text-style;
+}
