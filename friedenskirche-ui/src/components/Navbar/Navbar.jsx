@@ -10,11 +10,11 @@ import '../Navbar/Navbar.scss';
 const Navbar = () => {
     return (
         <nav className="nav-container">
-            <a className="logo-link" href="">
+            <Link className="logo-link" to="/">
                 <img className="logo" src={logo} alt="logo"/>
-            </a>
+            </Link>
 
-            <a className="navbar-item" href="faceboox">Gemeinde</a>
+            <Link className="navbar-item" to="Gemeinde">Gemeinde</Link>
             <a className="navbar-item">Aktuell</a>
             <a className="navbar-item">Asyl</a>
             <a className="navbar-item">Hospizdienst</a>
