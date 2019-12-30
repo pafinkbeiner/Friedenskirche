@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 //SCSS
 import './Footer.scss';
@@ -11,12 +12,12 @@ const Footer = () => {
 				    © Friedenskirche Freudenstadt 2019
 			    </div>
                 <div className="footer-info">
-                    <a href="#">
+                    <Link to="Impressum">
                         Impressum
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="Datenschutz">
                         Datenschutz
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

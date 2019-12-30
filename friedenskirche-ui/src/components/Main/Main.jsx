@@ -7,8 +7,7 @@ const Main = () => {
     return (
 
         <div className="main-container">
-            <h1>Test Artikel</h1>
-            <p>Dies ist ein Test Paragraph</p>
+            {window.location.replace("Gemeinde")}
         </div>
     )
 }
