@@ -1,5 +1,29 @@
 .gemeinde-table{
     background-color: #efefef;
     width: 30%;
+    tr{
+        td{
+            
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            b{
+                padding: 2px;
+            }
+        }
 
+    }
+}
+
+.content-beside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .content-right{
+        text-align: right;
+        p{
+            color: #4f4f4f;
+        }
+    }
 }

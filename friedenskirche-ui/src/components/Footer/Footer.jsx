@@ -11,6 +11,7 @@ const Footer = () => {
                 <div className="footer-title">
 				    © Friedenskirche Freudenstadt 2019
 			    </div>
+                <br/>
                 <div className="footer-info">
                     <Link to="Impressum">
                         Impressum
