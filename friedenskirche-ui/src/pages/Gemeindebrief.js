@@ -1,4 +1,5 @@
 import React from 'react'
+import {useStoreActions, useStoreState} from 'easy-peasy';
 
 //SCSS
 import './Gemeindebrief.scss';
@@ -13,6 +14,7 @@ import Thumb_2019_09 from '../pages/assets/Gemeindebriefe/2019_09/csm_2019_09_7b
 import PDF_2019_09 from '../pages/assets/Gemeindebriefe/2019_09/2019_09.pdf';
 
 const Gemeindebrief = () => {
+
     return (
         <div className="main-container">
             <h1>Gemeindebrief</h1>

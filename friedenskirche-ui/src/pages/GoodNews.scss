@@ -1,4 +1,23 @@
-.img-wide{
-    margin: auto;
-    width:70%;
+.main-img{
+    justify-content: center;
+    display: flex;
+    .img-wide{
+        margin: auto;
+        width:70%;
+    }
+}
+
+
+.img-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img{
+        width:48%;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
 }
