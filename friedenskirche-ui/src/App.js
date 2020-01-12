@@ -16,7 +16,9 @@ const store = createStore(model);
 function App() {
   return (
     <div className="App">
-      <Layout/>
+      <StoreProvider store={store}>
+        <Layout/>
+      </StoreProvider>
     </div>
   );
 }

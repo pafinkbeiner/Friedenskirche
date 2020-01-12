@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {useStoreActions, useStoreState} from 'easy-peasy';
 
 //SCSS
@@ -35,6 +35,14 @@ import Thumb_2017_12 from '../pages/assets/Gemeindebriefe/2017_12/csm_2017_12_0a
 import PDF_2017_12 from '../pages/assets/Gemeindebriefe/2017_12/2017_12.pdf';
 
 const Gemeindebrief = () => {
+
+    const setPage = useStoreActions(actions => actions.setPage);
+    const page = useStoreState(state => state.page);
+
+    useEffect(() => {
+        setPage("Gemeindebriefe");
+        document.title = page;
+    }, [page])
 
     return (
         <div className="main-container">

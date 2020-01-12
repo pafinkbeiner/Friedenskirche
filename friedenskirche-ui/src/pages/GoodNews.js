@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import {useStoreActions, useStoreState} from 'easy-peasy';
 
 import './Page.scss'
 import './GoodNews.scss';
@@ -27,6 +28,15 @@ import img19 from '../pages/assets/GoodNews/csm_GN_110_e41e54d77b.jpg';
 import img20 from '../pages/assets/GoodNews/csm_GN_111_012200415c.jpg';
 
 const GoodNews = () => {
+
+    const setPage = useStoreActions(actions => actions.setPage);
+    const page = useStoreState(state => state.page);
+
+    useEffect(() => {
+        setPage("Good News");
+        document.title =  page;
+    }, [page])
+
     return (
         <div className="main-container">
             <h1>Good News</h1>

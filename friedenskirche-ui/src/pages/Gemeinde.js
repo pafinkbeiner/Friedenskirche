@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import {useStoreActions, useStoreState} from 'easy-peasy';
 
 //Pictures
 import img1 from './assets/ohne-hilfe.png';
@@ -9,6 +10,14 @@ import './Page.scss';
 import './Gemeinde.scss';
 
 const Gemeinde = () => {
+
+    const setPage = useStoreActions(actions => actions.setPage);
+    const page = useStoreState(state => state.page);
+
+    useEffect(() => {
+        setPage("Gemeinde");
+        document.title = page;
+    }, [page])
 
     return (
         <div className="main-container">

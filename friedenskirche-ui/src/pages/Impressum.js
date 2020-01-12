@@ -1,8 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import {useStoreActions, useStoreState} from 'easy-peasy';
 
 import './Page.scss';
 
 const Impressum = () => {
+
+    const setPage = useStoreActions(actions => actions.setPage);
+    const page = useStoreState(state => state.page);
+
+    useEffect(() => {
+        setPage("Impressum");
+        document.title = page;
+    }, [page])
+
     return (
         <div className="main-container">
         <h1>Impressum</h1>
