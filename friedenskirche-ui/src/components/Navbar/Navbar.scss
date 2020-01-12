@@ -1,5 +1,9 @@
 @import '../../variables.scss';
 
+.burger{
+    display: none;
+}
+
 .nav-container{
     /*Flexbox*/
     display: flex;
@@ -36,3 +40,47 @@
     }
 }
 
+
+
+@media screen and (max-width: 950px) {
+
+    .burger{
+        display: block;
+    }
+
+    .burger-button{
+        background-color: white;
+        border: none;
+    }
+
+    .burger-button:enabled{
+        background-color: white;
+        border: none;
+        .navbar-item{
+            display: none;
+        }
+    }
+
+
+    .nav-container{
+        /*Flexbox*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+
+    
+        .navbar-item{
+    
+            color: #4a4a4a;
+            padding: 8px;
+            margin-left: 9px;
+            border:none;
+            background: none;
+            text-align: center;
+            line-height: 25px;
+        }
+    
+    }
+}
